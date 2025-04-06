@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmação de Presença</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Maria Ana & Jailson</h1>
+    <p>Estamos muito felizes em celebrar esse momento com você!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Página Inicial</a>
+    <a href="presentes.html">Lista de Presentes</a>
+    <a href="galeria.html">Galeria de Fotos</a>
+    <a href="confirmacao.html">Confirmação de Presença</a>
+  </nav>
+
+  <div class="container">
+    <div class="section active">
+      <h2>Confirme sua Presença 🎉</h2>
+      <p>Por favor, envie seu nome e o número de convidados para que possamos nos organizar.</p>
+      
+      <form action="mailto:confirmacao@email.com" method="post" enctype="text/plain">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="convidados">Número de Convidados:</label>
+        <input type="number" id="convidados" name="convidados" required><br><br>
+        <input type="submit" value="Enviar Confirmação">
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    Com carinho, Maria Ana & Jailson ♥
+  </footer>
+</body>
+</html>
