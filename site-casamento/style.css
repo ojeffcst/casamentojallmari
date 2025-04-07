@@ -1,0 +1,235 @@
+/* Reseta margens e padding de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo do site */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #890f0f; /* Fundo claro e suave */
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Great Vibes', cursive;
+    color: #f8f8f8;
+    font-size: 3.5rem;
+    position: relative;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  header .date {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  header .line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 2px;
+    background-color: #b30000;
+  }
+  
+  /* Navegação */
+  nav {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #b30000;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  /* Título de cada seção */
+  h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* Grid de produtos */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .product {
+    background: #8e0e0e;
+    border: 1px solid #ffcccc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product strong {
+    color: #b30000;
+  }
+  
+  .product p {
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Caixa de Pix */
+  .pix-box {
+    background: #fff0f0;
+    border: 1px solid #ffb3b3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .pix-box p {
+    font-size: 1.1rem;
+  }
+  
+  button {
+    background: #b30000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  button:hover {
+    background: #800000;
+    transform: translateY(-2px);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #b30000;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Aplica a animação de fadeIn aos elementos */
+  .fade-in {
+    animation: fadeIn 2s ease-out forwards;
+  }
+  
+  /* Aplica a animação de slideUp aos elementos */
+  .slide-up {
+    animation: slideUp 1s ease-out forwards;
+  }
+  
+  /* Aplica a animação de typing ao texto */
+  .typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #b30000;
+    width: 0;
+    animation: typing 4s steps(40) 1s forwards, fadeIn 2s ease-out forwards;
+  }
+  
+  /* Estilo do texto */
+  h1, h2, p {
+    opacity: 0; /* Inicialmente oculto */
+  }
+  
+  /* Estilo do título */
+  header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  header .date {
+    font-size: 1.4rem;
+    color: #b30000;
+    margin-top: 20px;
+  }
+  
+  
+  
